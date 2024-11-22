@@ -3,3 +3,4 @@ venv/
 reminders.txt
 __pycache__/
 *.pyc
+util/
