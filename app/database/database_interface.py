@@ -87,4 +87,3 @@ def getQueryFromDremio():
         if conn:
             conn.close()
 
-getQueryFromDremio()
