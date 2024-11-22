@@ -1,7 +1,9 @@
 # Public Data Interactive Dashboard
 ## This Application is actually running live on : [Caio's Website](https://cgouvea.com.br)
 
-###Objective: Create an interactive Flask web application that allows users to explore and visualize public datasets, such as those available from INEP, SUS, CNES, and others. The website will provide an easy-to-use interface to select different datasets and generate custom dashboards, allowing users to filter the data by region, municipality, and other criteria.
+### This project was never meant to be focused on Front-End development. We're using pre-built Bootstrap templates!
+
+### Objective: Create an interactive Flask web application that allows users to explore and visualize public datasets, such as those available from INEP, SUS, CNES, and others. The website will provide an easy-to-use interface to select different datasets and generate custom dashboards, allowing users to filter the data by region, municipality, and other criteria.
 
 ### Main Features
 
