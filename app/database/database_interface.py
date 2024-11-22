@@ -1,11 +1,15 @@
-from flask_app_site.app.database.postgres_model import PostgresDB
+from postgres_model import PostgresDB
+from dremio_model import DremioDB
 import sys
 import os
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+os.environ["SLF4J_NO_MSGS"] = "true"
 
 from app.models.user import User
 
 pg_db = PostgresDB()
+dremio_db = DremioDB()
 
 def getUserFromPostgres(user_name: str):
     try:
@@ -64,3 +68,23 @@ def deleteUserFromPostgres(user: User):
         if conn:
             conn.close()
 
+
+def getQueryFromDremio():
+    try:
+        conn = dremio_db.getConn()
+        cur = conn.cursor()
+        query = "SELECT * FROM \"@caio\".ceara_updated"
+        cur.execute(query)
+        result = cur.fetchall()
+
+        for row in result:
+            print(row)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        if cur:
+            cur.close()
+        if conn:
+            conn.close()
+
+getQueryFromDremio()
