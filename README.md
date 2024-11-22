@@ -18,3 +18,41 @@ HTML, CSS, JavaScript: Structuring and styling the user interface.
 Plotly / Matplotlib: Libraries for creating interactive charts.
 Pandas: For data processing.
 Bootstrap: CSS framework for responsive design and UI enhancement.
+
+# Project Phases
+### Planning and Requirements Definition:
+
+### Identify the datasets to be used (INEP, SUS, CNES, etc.).
+Define the relevant data to be displayed in the dashboards (number of beds, types of beds, municipalities, regions, etc.).
+Define the types of filters to be applied (by municipality, region, etc.).
+Development Environment Setup:
+
+### Create the basic Flask app structure.
+Install necessary dependencies: Flask, Pandas, Plotly, Bootstrap.
+Set up the environment to run the app locally.
+Home Page (Index) Development:
+
+### Create the HTML template for the homepage with an introduction to the project and a section explaining how to navigate the site.
+Add information about the public data available and the project's purpose.
+Databases Page Development:
+
+### Create the interface where users can select a dataset.
+Display the available dataset options (e.g., "Number of Beds in SUS").
+Add logic to redirect users to the corresponding dashboard page once a dataset is selected.
+Interactive Dashboard Creation:
+
+### Create a dedicated page to display the dashboard.
+Implement interactive charts using Plotly or Matplotlib.
+Process the data using Pandas and generate dynamic visualizations.
+Implement Filters and Interactivity:
+
+### Add filters for data, such as selecting by municipality, region, or bed type.
+Ensure that the selection of filters updates the charts dynamically.
+Testing and Validation:
+
+### Test the application locally and across different browsers.
+Validate the displayed data and filter functionality.
+Future Enhancements:
+
+###Implement features such as exporting charts, generating reports in PDF, etc.
+Expand the number of datasets available for visualization.
