@@ -1,4 +1,4 @@
-from database_config import PostgresDB
+from flask_app_site.app.database.postgres_model import PostgresDB
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
@@ -64,7 +64,3 @@ def deleteUserFromPostgres(user: User):
         if conn:
             conn.close()
 
-
-# getUserFromPostgres(user_name='cgouvea')
-# putUserInPostgres(user=User(name="jorgin", password="teste123", id=None))
-# deleteUserFromPostgres(user=User(name="jorgin", password="teste123", id=None))
