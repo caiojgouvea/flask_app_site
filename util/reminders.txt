@@ -1,3 +1,5 @@
 Diferente do windows, para ativar a venv é: source ./venv/bin/activate
 
-Rodando Gunicorn: nohup gunicorn -w 4 applicationp:app --bind 127.0.0.1:8000
+Rodando Gunicorn: 
+nohup gunicorn -w 4 applicationp:app --bind 127.0.0.1:8000
+nohup /opt/flask_app_site/venv/bin/gunicorn -w 4 --reload application:app --bind 127.0.0.1:8000 &
